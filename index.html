@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+    background: url(bask1.jpg);
+    background-size: auto;
+    height: auto;
+    width: 100%;
+}
+    </style>
+</head>
+<body class="bg-blue-400">
+    <section>
+        <div class="container grid place-items-center pt-10">
+            <h3 id="result" class="font-semibold text-blue text-4xl">
+                winner
+            </h3>
+            <div class="flex flex-row rounded text-white text-4xl bg-blue-700">
+                <div class="pr-20 ml-10 mt-5">
+                    <h3 id="result1" class="font-semibold">
+                        Player 1
+                    </h3>
+                    <input type="text" id="name1">
+                    <div id="home-el" class="bg-black rounded grid place-items-center mt-2 mb-0">
+                        <img class="img1" src="./images/dice1.jpg">
+                    </div>
+                    <button id="increment-btn" onclick="play1()" class="font-bold hover:bg-blue-500 bg-blue-900 rounded mb-9 text-Ig w-20 h-7">
+                        player 1
+                    </button>
+                </div>
+                <div class="pr-10 ml-10 mt-5">
+                    <h3 id="result2" class="font-semibold">
+                        Player 2
+                    </h3>
+                    <input type="text" id="name2">
+                <div id="home-el" class="bg-black rounded grid place-items-center mt-2 mb-0">
+                    <img class="img2" src="./images/dice1.jpg">
+                </div>
+                <button id="increment-btn" onclick="play2()" class="font-bold hover:bg-blue-500 bg-blue-900 rounded mb-9 text-Ig w-20 h-7">
+                    player 2
+                </button> 
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+    
+</body>
+</html>
